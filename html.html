@@ -1,0 +1,35 @@
+<html>
+	<body>
+		<h1> zwei zahlen eingeben!</h1>
+		<input type="text", id="zahl1">
+		<input type="text", id="zahl2">
+		<button onClick="rechnen()">klick!</button>
+		<br>
+		<div id="div1"></div>
+		<br>
+		<div id="div2"></div>
+		<br>
+		<div id="div3"></div>
+		<br>
+		<div id="div4"></div>
+
+		<script>
+			function rechnen() {
+				x = document.getElementById("zahl1").value;
+				y = document.getElementById("zahl2").value;
+				
+				a = document.getElementById("div1");
+				b = document.getElementById("div2");
+				c = document.getElementById("div3");
+				d = document.getElementById("div4");
+
+				a.innerHTML = x + y;
+				b.innerHTML = x - y;
+				c.innerHTML = x * y;
+				d.innerHTML = x / y;
+				
+				return;
+			}
+		</script>
+	</body>
+</html>
